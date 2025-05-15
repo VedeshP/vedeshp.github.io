@@ -1,0 +1,120 @@
+# _config.yml
+
+# Minimal Mistakes Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Or latest stable version
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+title: "Vedesh Pandya"
+name: "Vedesh Pandya"
+description: "Developer | Problem Solver | Tech Enthusiast" # Your tagline
+avatar: "/assets/images/your-avatar.jpg" # Add an avatar image to this path
+locale: "en-US"
+url: "https://vedeshp.github.io" # Your site URL
+repository: "vedeshp/vedeshp.github.io"
+
+# Author Details (Optional, but good for SEO and theme integration)
+author:
+  name: "Vedesh Pandya"
+  avatar: "/assets/images/your-avatar.jpg"
+  bio: "A short bio about yourself. You can elaborate more on the About page."
+  location: "Ahmedabad, India"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:youremail@example.com" # Optional, can link directly
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/vedesh-pandya"
+    # Add other social links like Twitter, Instagram, etc.
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Outputting
+permalink: /:categories/:title/
+
+# Plugins (GitHub Pages supports a subset of Jekyll plugins)
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-remote-theme # Required for remote themes
+  # - jekyll-paginate # If you use pagination
+  # - jekyll-sitemap # Good for SEO
+
+# Defaults for Pages and Collections (Important for structure)
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single # Default layout for pages
+      author_profile: true # Show author profile on pages
+  # _projects (You will create this collection)
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true # Show social share buttons
+  # _posts (If you plan to have a blog section)
+  # - scope:
+  #     path: ""
+  #     type: posts
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     read_time: true
+  #     comments: true # If you integrate comments
+  #     share: true
+  #     related: true
+
+# Navigation (appears in the header)
+main_navigation:
+  - title: "About Me"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Skills & Certs"
+    url: /skills-certs/
+  - title: "More" # For books, achievements etc.
+    url: /more/
+  # - title: "Blog" # If you want a blog
+  #   url: /blog/
+
+# Footer links (Optional)
+footer_links:
+  - title: GitHub
+    url: https://github.com/vedeshp
+    icon: fab fa-github-square
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/vedesh-pandya
+    icon: fab fa-linkedin
+
+# Collections (Define your custom content types)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  # You can add more collections if needed, e.g., certifications
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE.md
