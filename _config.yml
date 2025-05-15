@@ -2,7 +2,7 @@
 
 # Minimal Mistakes Theme Settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Or latest stable version
-minimal_mistakes_skin: "dark"  # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" "default"
+minimal_mistakes_skin: "neon"  # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" "default" "dark"
 
 # Site Settings
 title: "Vedesh Pandya"
